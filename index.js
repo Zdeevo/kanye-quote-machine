@@ -1,10 +1,8 @@
-const url = `https://api.kanye.rest/`;
-const handleDisplay = (response) => {
-    alert(response.quote);
-};
-const handleGetJson = (response) => {
-    return response.json();
-};
-const handleClick = () => {
-    fetch(url).then(handleGetJson).then(handleDisplay);
+var url = "https://api.kanye.rest/";
+var handleClick = function () {
+    fetch(url)
+        .then(function (response) { return response.json(); })
+        .then(function (response) {
+        document.getElementById("theShiz").textContent = response.quote;
+    });
 };

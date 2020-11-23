@@ -3,18 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>S**T KANYE SAYS!</title>
-    <script src="index.js"></script>
-    <link href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>KANYE QUOTE MACHINE</title>
   </head>
   <body>
-    <div class="shitShoveler">
-      <h1>S**T KANYE SAYS!</h1>
-      <h2>
-        Press the button below to shovel some wisdom from the actual real human,
-        Kanye West.
-      </h2>
-      <button onclick="handleClick()">Shovel The Shit</button>
+    <div class="kanyeQMContainer">
+      <div class="kanyeQMText">
+        <h2 class="kanyeQMHeading">S**T KANYE SAYS!</h2>
+        <h3 class="kanyeQMSubheading">
+          Press the button below to shovel some wisdom from the living breathing
+          human cartoon, Kanye West.
+        </h3>
+        <button class="kanyeQMButton" onclick="handleClick()">
+          Shovel The Shizzle
+        </button>
+
+        <div class="kanyeQMQoute">
+          <p class="theShiz" id="theShiz">...</p>
+          - Kanye West
+        </div>
+      </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

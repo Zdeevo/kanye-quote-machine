@@ -1,10 +1,8 @@
-console.log("Hello Friend!!!");
-// Properties
-var user = "Andy";
-var age;
-var isBritish;
-// Functions
-var sayHello = function (name, age) {
-    console.log('Hello ${name}.. you are ${age}');
+const url = `https://api.kanye.rest/`;
+const handleClick = () => {
+    fetch(url)
+        .then((response) => response.json())
+        .then((response) => {
+        document.getElementById("theShiz").textContent = response.quote;
+    });
 };
-// Interfaces
